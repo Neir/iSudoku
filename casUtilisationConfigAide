@@ -17,10 +17,9 @@ Pré-conditions :
 aucunes
 
 Enchaînement nominal
-	1) Le joueur appuie sur le bouton
-	2) Le système affiche les options d'aide
-	3) Le joueur change le niveau de l'aide (facile, intermédiaire, difficile) puis appuie sur le bouton de validation
-	4) Le système modifie les options
+	1) Le système affiche les options d'aide
+	2) Le joueur change le niveau de l'aide (facile, intermédiaire, difficile) puis appuie sur le bouton de validation
+	3) Le système modifie les options
 	
 	
 	
