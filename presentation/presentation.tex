@@ -76,10 +76,8 @@
       \setbeamertemplate{enumerate item}[circle]
     \item
       \scriptsize{L'utilisateur sélectionne une case vide de la grille à remplir.}
-      \pause
     \item
       \scriptsize{Le système affiche une aide selon le niveau de difficulté :}
-      \pause
       \begin{itemize}
         \setbeamertemplate{itemize item}[circle]
       \item
@@ -88,13 +86,10 @@
       \item
         \scriptsize{difficile : le système n'affiche rien}
       \end{itemize}
-      \pause
     \item
       \scriptsize{L'utilisateur entre un numéro de 1 à 9 dans cette case.}
-      \pause
     \item
-      \scriptsize{L'utilisateur répète l'action 1) jusqu'à compléter intégralement la grille.}
-      \pause
+      \scriptsize{L'utilisateur répète l'action 1 jusqu'à compléter intégralement la grille.}
     \item
       \scriptsize{L'utilisateur valide la grille.}
     \end{enumerate}
@@ -107,6 +102,39 @@
     \scriptsize{Le QI du joueur est mis-à-jour}
   \end{block}
   \pause
-
+  \begin{block}{\footnotesize{Enchaînement alternatif 1}}
+    \scriptsize{Le niveau est intermédiaire et l’utilisateur se trompe lorsqu’il entre une valeur dans une case.
+    L’enchaînement démarre après le point 3) de la séquence nominale :}
+    \begin{enumerate}    
+      \setbeamertemplate{enumerate item}[circle]
+    \item
+      \scriptsize{Le système affiche un message signalant que la valeur entrée est fausse}
+    \item
+      \scriptsize{On retourne au point 1 de la séquence nominale}
+    \end{enumerate}
+  \end{block}
+  \pause
+  \begin{block}{\footnotesize{Enchaînement alternatif 2}}
+    \scriptsize{Le niveau est difficile et la grille remplie par l’utilisateur est fausse.
+    L’enchaînement démarre après le point 5 de la séquence nominale :}
+    \begin{enumerate}    
+      \setbeamertemplate{enumerate item}[circle]
+    \item
+      \scriptsize{Le système affiche un message signalant que la grille est fausse et remet la grille à zéro.}
+    \item
+      \scriptsize{On retourne au point 1 de la séquence nominale}
+    \end{enumerate}
+  \end{block}
+  \pause
+  \begin{block}{\footnotesize{Enchaînement E 1}}
+    \scriptsize{On interrompt le remplissage de la grille (ou bien l’utilisateur quitte, ou bien l’application est interrompue par une application externe comme la réception d’un appel).
+L’enchaînement démarre après n’importe quel point de la séquence nominale.}
+  \end{block}
+\end{frame}
+\begin{frame}
+\frametitle{Diagramme de classe métier}
+\begin{figure}[h]
+  \includegraphics[scale=0.4]{diagrammeDeClasseMetier.png}
+\end{figure}
 \end{frame}
 \end{document}
