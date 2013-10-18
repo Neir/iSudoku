@@ -151,28 +151,53 @@ L’enchaînement démarre après n’importe quel point de la séquence nominal
     \item
       \scriptsize{Le joueur change le niveau de l’aide (facile, intermédiaire ou difficile) puis appuie sur le bouton de validation}
     \end{enumerate}
+\pause 
+ \end{block}
+  \begin{block}{\footnotesize{Post-conditions}}
+    \scriptsize{Le système a modifié les options.}
+\pause
   \end{block}
-\begin{block}{\footnotesize{Post-conditions}}
-Le système a modifié les options.
-\end{block}
-\begin{block}{\footnotesize{Enchaînement d’Exception 1}}
-\scriptsize{On annule la sélection des options. Commence après le point 2 de la séquence nominale.}
-\begin{enumerate}    
-  \setbeamertemplate{enumerate item}[circle]
-\item
-  \scriptsize{L’utilisateur clique sur le bouton annuler}
-\end{enumerate}
-    \end{block}
+  \begin{block}{\footnotesize{Enchaînement d’Exception 1}}
+    \scriptsize{On annule la sélection des options. Commence après le point 2 de la séquence nominale.}
+    \begin{enumerate}    
+      \setbeamertemplate{enumerate item}[circle]
+    \item
+      \scriptsize{L’utilisateur clique sur le bouton annuler}
+    \item
+      \scriptsize{Le système ne modifie pas les options et laisse la configuration précédent.}
+    \end{enumerate}
+  \end{block}
 \end{frame}
+
+\begin{frame}
+  \frametitle{Fiche détaillée du cas d'utilisation « Consulter les statistiques »}
+  \setbeamertemplate{blocks}[default]
+  \begin{block}{\footnotesize{But}}
+\scriptsize{Décrire les étapes de consultation des statistiques}
+  \end{block}
+  \pause
+  \begin{block}{\footnotesize{Séquencement}}
+\scriptsize{Le cas d'utilisation démarre lorsqu’un utilisateur appuie sur le bouton de consultations des statistiques}
+  \end{block}
+  \pause
+  \begin{block}{\footnotesize{Enchaînement nominal}}
+    \begin{enumerate}    
+      \setbeamertemplate{enumerate item}[circle]
+    \item
+      \scriptsize{Le joueur appuie sur le bouton}
+    \item
+      \scriptsize{Le joueur affiche les statistiques gardées en mémoire}
+    \end{enumerate}
+\pause 
+ \end{block}
+\end{frame}
+
 
 \subsection{Diagramme de classe métier}
 \begin{frame}
-\frametitle{Diagramme de classe métier}
-\begin{figure}[h]
-  \includegraphics[scale=0.4]{diagrammeDeClasseMetier.png}
+  \frametitle{Diagramme de classe métier}
+  \begin{figure}[h]
+    \includegraphics[scale=0.4]{diagrammeDeClasseMetier.png}
 \end{figure}
-\end{frame}
-
-\begin{frame}
 \end{frame}
 \end{document}
