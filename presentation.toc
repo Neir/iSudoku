@@ -1,0 +1,7 @@
+\beamer@endinputifotherversion {3.10pt}
+\select@language {french}
+\beamer@sectionintoc {1}{Pr\IeC {\'e}sentation du groupe et de l\IeC {\textquoteright }organisation}{2}{0}{1}
+\beamer@subsectionintoc {1}{1}{Gestion partag\IeC {\'e}e des mod\IeC {\`e}les et du code}{5}{0}{1}
+\beamer@sectionintoc {2}{Phase d\IeC {\textquoteright }analyse du iSudoku}{7}{0}{2}
+\beamer@subsectionintoc {2}{1}{Diagramme de cas d\IeC {\textquoteright }utilisation}{10}{0}{2}
+\beamer@subsectionintoc {2}{2}{Fiche d\IeC {\'e}taill\IeC {\'e}e de cas d\IeC {\textquoteright }utilisations}{11}{0}{2}
