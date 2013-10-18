@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.10.29)  18 OCT 2013 11:49
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.10.29)  18 OCT 2013 13:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1328,7 +1328,7 @@ Overfull \hbox (302.55942pt too wide) has occurred while \output is active
 
 [11
 
-] <diagrammeCasDUtilisation.png, id=381, 752.8125pt x 477.785pt>
+] <diagrammeCasDUtilisation.png, id=382, 752.8125pt x 477.785pt>
 File: diagrammeCasDUtilisation.png Graphic file (type png)
 
 <use diagrammeCasDUtilisation.png>
@@ -1411,14 +1411,14 @@ Overfull \hbox (302.55942pt too wide) has occurred while \output is active
 
 [22
 
-] <diagrammeDeClasseMetier.png, id=674, 883.3pt x 449.68pt>
+] <diagrammeDeClasseMetier.png, id=675, 883.3pt x 449.68pt>
 File: diagrammeDeClasseMetier.png Graphic file (type png)
 
 <use diagrammeDeClasseMetier.png>
-Package pdftex.def Info: diagrammeDeClasseMetier.png used on input line 175.
+Package pdftex.def Info: diagrammeDeClasseMetier.png used on input line 174.
 (pdftex.def)             Requested size: 353.31374pt x 179.8688pt.
 
-Overfull \hbox (10.87842pt too wide) in paragraph at lines 175--175
+Overfull \hbox (10.87842pt too wide) in paragraph at lines 174--174
  [] 
  []
 
@@ -1430,6 +1430,13 @@ Overfull \hbox (302.55942pt too wide) has occurred while \output is active
 [23
 
  <./diagrammeDeClasseMetier.png>]
+Overfull \hbox (302.55942pt too wide) has occurred while \output is active
+ [][]  \T1/lmss/m/n/6 ([])  
+ []
+
+[24
+
+]
 \tf@nav=\write6
 \openout6 = `presentation.nav'.
 
@@ -1449,10 +1456,10 @@ Package rerunfilecheck Info: File `presentation.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 178.
  ) 
 Here is how much of TeX's memory you used:
- 16908 strings out of 495030
- 309159 string characters out of 3180760
- 396149 words of memory out of 3000000
- 19591 multiletter control sequences out of 15000+200000
+ 16912 strings out of 495030
+ 309194 string characters out of 3180760
+ 396216 words of memory out of 3000000
+ 19593 multiletter control sequences out of 15000+200000
  45574 words of font info for 46 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  49i,16n,66p,401b,842s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1461,10 +1468,10 @@ public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/
 share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/publ
 ic/lm/lmss8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss9.pfb></usr/share/t
 exmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on presentation.pdf (23 pages, 232893 bytes).
+Output written on presentation.pdf (24 pages, 234635 bytes).
 PDF statistics:
- 736 PDF objects out of 1000 (max. 8388607)
- 684 compressed objects within 7 object streams
- 53 named destinations out of 1000 (max. 500000)
+ 764 PDF objects out of 1000 (max. 8388607)
+ 710 compressed objects within 8 object streams
+ 55 named destinations out of 1000 (max. 500000)
  133 words of extra memory for PDF output out of 10000 (max. 10000000)
 
