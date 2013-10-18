@@ -58,7 +58,7 @@
   \includegraphics[scale=0.4]{diagrammeCasDUtilisation.png}
 \end{figure}
 \end{frame}
-\subsection{Fiche détaillée de cas d’utilisations}
+\subsection{Fiches détaillées de cas d’utilisation}
 \begin{frame}
   \frametitle{Fiche détaillée du cas d'utilisation « Résoudre Grille »}
   \setbeamertemplate{blocks}[default]
@@ -126,15 +126,53 @@
     \end{enumerate}
   \end{block}
   \pause
-  \begin{block}{\footnotesize{Enchaînement E 1}}
+  \begin{block}{\footnotesize{Enchaînement d’Exception 1}}
     \scriptsize{On interrompt le remplissage de la grille (ou bien l’utilisateur quitte, ou bien l’application est interrompue par une application externe comme la réception d’un appel).
 L’enchaînement démarre après n’importe quel point de la séquence nominale.}
   \end{block}
 \end{frame}
+
+\begin{frame}
+  \frametitle{Fiche détaillée du cas d'utilisation « Configurer l’aide »}
+  \setbeamertemplate{blocks}[default]
+  \begin{block}{\footnotesize{But}}
+\scriptsize{Décrire les étapes de configuration de l’aide}
+  \end{block}
+  \pause
+  \begin{block}{\footnotesize{Séquencement}}
+\scriptsize{Le cas d'utilisation démarre lorsqu’un utilisateur appuie sur le bouton de configuration de l’aide}
+  \end{block}
+  \pause
+  \begin{block}{\footnotesize{Enchaînement nominal}}
+    \begin{enumerate}    
+      \setbeamertemplate{enumerate item}[circle]
+    \item
+      \scriptsize{Le système affiche les options d’aide}
+    \item
+      \scriptsize{Le joueur change le niveau de l’aide (facile, intermédiaire ou difficile) puis appuie sur le bouton de validation}
+    \end{enumerate}
+  \end{block}
+\begin{block}{\footnotesize{Post-conditions}}
+Le système a modifié les options.
+\end{block}
+\begin{block}{\footnotesize{Enchaînement d’Exception 1}}
+\scriptsize{On annule la sélection des options. Commence après le point 2 de la séquence nominale.}
+\begin{enumerate}    
+  \setbeamertemplate{enumerate item}[circle]
+\item
+  \scriptsize{L’utilisateur clique sur le bouton annuler}
+\end{enumerate}
+    \end{block}
+\end{frame}
+
+
+\subsection{Diagramme de classe métier}
 \begin{frame}
 \frametitle{Diagramme de classe métier}
 \begin{figure}[h]
   \includegraphics[scale=0.4]{diagrammeDeClasseMetier.png}
 \end{figure}
 \end{frame}
+
+
 \end{document}
