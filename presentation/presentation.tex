@@ -8,8 +8,10 @@
 \usepackage[french]{babel}
 \usepackage{array}
 
-%\usetheme{Hannover}
+\mode<presentation> {
 \usetheme{Madrid}
+\setbeamertemplate{navigation symbols}{}
+}
 
 \title[Analyse de iSudoku]{Analyse de iSudoku}
 \subtitle[\ldots]{Projet de l'UE Ingénierie du Logiciel}
@@ -26,7 +28,7 @@
   \and
   Simon \bsc{Tchernia}
 }
-\institute{Université Pierre et Marie Curie}
+\institute[UPMC]{Université Pierre et Marie Curie}
 \date{\today}
 
 \AtBeginSection[] {
@@ -45,78 +47,77 @@
 \begin{frame}
   \frametitle{Gestion partagée des modèles et du code}
   \begin{description}
-    \item [Notre hébergeur de projet] \url{htps://github.com/neir/iSudoku}
-      \pause
+    \item [Notre hébergeur de projet] \url{https://github.com/Neir/iSudoku}
+    \pause
     \item [Notre logiciel de gestion de versions] Git
-\end{description}
+  \end{description}
 \end{frame}
+
 \section{Phase d’analyse du iSudoku}
 \subsection{Diagramme de cas d’utilisation}
 \begin{frame}
-\frametitle{Diagramme de cas d'utilisation}
-\begin{figure}[h]
-  \includegraphics[scale=0.4]{diagrammeCasDUtilisation.png}
-\end{figure}
+  \frametitle{Diagramme de cas d'utilisation}
+  \begin{figure}[h]
+    \includegraphics[scale=0.4]{diagrammeCasDUtilisation.png}
+  \end{figure}
 \end{frame}
+
 \subsection{Fiches détaillées de cas d’utilisation}
 \begin{frame}
   \frametitle{Fiche détaillée du cas d'utilisation « Résoudre Grille »}
   \setbeamertemplate{blocks}[default]
   \begin{block}{\footnotesize{But}}
-\scriptsize{L'utilisateur veut résoudre une nouvelle grille de sudoku}
+    \scriptsize{L'utilisateur veut résoudre une nouvelle grille de sudoku}
   \end{block}
   \pause
   \begin{block}{\footnotesize{Séquencement}}
-\scriptsize{Le cas d'utilisation commence lorsque la grille apparaît sur l'écran du
-    smartphone / tablette}
+    \scriptsize{Le cas d'utilisation commence lorsque la grille apparaît sur l'écran du smartphone / tablette}
   \end{block}
   \pause
   \begin{block}{\footnotesize{Enchaînement nominal}}
     \begin{enumerate}    
       \setbeamertemplate{enumerate item}[circle]
-    \item
-      \scriptsize{L'utilisateur sélectionne une case vide de la grille à remplir.}
-    \item
-      \scriptsize{Le système affiche une aide selon le niveau de difficulté :}
-      \begin{itemize}
-        \setbeamertemplate{itemize item}[circle]
       \item
-        \scriptsize{facile : le système affiche pour chaque case les valeurs possibles au vu du
-        reste de la grille}
+        \scriptsize{L'utilisateur sélectionne une case vide de la grille à remplir.}
       \item
-        \scriptsize{difficile : le système n'affiche rien}
-      \end{itemize}
-    \item
-      \scriptsize{L'utilisateur entre un numéro de 1 à 9 dans cette case.}
-    \item
-      \scriptsize{L'utilisateur répète l'action 1 jusqu'à compléter intégralement la grille.}
-    \item
-      \scriptsize{L'utilisateur valide la grille.}
+        \scriptsize{Le système affiche une aide selon le niveau de difficulté :}
+        \begin{itemize}
+          \setbeamertemplate{itemize item}[circle]
+          \item
+            \scriptsize{facile : le système affiche pour chaque case les valeurs possibles au vu du reste de la grille}
+          \item
+            \scriptsize{difficile : le système n'affiche rien}
+        \end{itemize}
+      \item
+        \scriptsize{L'utilisateur entre un numéro de 1 à 9 dans cette case.}
+      \item
+        \scriptsize{L'utilisateur répète l'action 1 jusqu'à compléter intégralement la grille.}
+      \item
+        \scriptsize{L'utilisateur valide la grille.}
     \end{enumerate}
   \end{block}
 \end{frame}
+
 \begin{frame}
-\frametitle{Fiche détaillée du cas d'utilisation : « Résoudre Grille »}
-\setbeamertemplate{blocks}[default]
+  \frametitle{Fiche détaillée du cas d'utilisation : « Résoudre Grille »}
+  \setbeamertemplate{blocks}[default]
   \begin{block}{\footnotesize{Post-conditions}}
     \scriptsize{Le QI du joueur est mis-à-jour}
   \end{block}
   \pause
   \begin{block}{\footnotesize{Enchaînement alternatif 1}}
-    \scriptsize{Le niveau est intermédiaire et l’utilisateur se trompe lorsqu’il entre une valeur dans une case.
-    L’enchaînement démarre après le point 3) de la séquence nominale :}
+    \scriptsize{Le niveau est intermédiaire et l’utilisateur se trompe lorsqu’il entre une valeur dans une case. L’enchaînement démarre après le point 3) de la séquence nominale :}
     \begin{enumerate}    
       \setbeamertemplate{enumerate item}[circle]
-    \item
-      \scriptsize{Le système affiche un message signalant que la valeur entrée est fausse}
-    \item
-      \scriptsize{On retourne au point 1 de la séquence nominale}
+      \item
+        \scriptsize{Le système affiche un message signalant que la valeur entrée est fausse}
+      \item
+        \scriptsize{On retourne au point 1 de la séquence nominale}
     \end{enumerate}
   \end{block}
   \pause
   \begin{block}{\footnotesize{Enchaînement alternatif 2}}
-    \scriptsize{Le niveau est difficile et la grille remplie par l’utilisateur est fausse.
-    L’enchaînement démarre après le point 5 de la séquence nominale :}
+    \scriptsize{Le niveau est difficile et la grille remplie par l’utilisateur est fausse. L’enchaînement démarre après le point 5 de la séquence nominale :}
     \begin{enumerate}    
       \setbeamertemplate{enumerate item}[circle]
     \item
@@ -136,35 +137,35 @@ L’enchaînement démarre après n’importe quel point de la séquence nominal
   \frametitle{Fiche détaillée du cas d'utilisation « Configurer l’aide »}
   \setbeamertemplate{blocks}[default]
   \begin{block}{\footnotesize{But}}
-\scriptsize{Décrire les étapes de configuration de l’aide}
+    \scriptsize{Décrire les étapes de configuration de l’aide}
   \end{block}
   \pause
   \begin{block}{\footnotesize{Séquencement}}
-\scriptsize{Le cas d'utilisation démarre lorsqu’un utilisateur appuie sur le bouton de configuration de l’aide}
+    \scriptsize{Le cas d'utilisation démarre lorsqu’un utilisateur appuie sur le bouton de configuration de l’aide}
   \end{block}
   \pause
   \begin{block}{\footnotesize{Enchaînement nominal}}
     \begin{enumerate}    
       \setbeamertemplate{enumerate item}[circle]
-    \item
-      \scriptsize{Le système affiche les options d’aide}
-    \item
-      \scriptsize{Le joueur change le niveau de l’aide (facile, intermédiaire ou difficile) puis appuie sur le bouton de validation}
+      \item
+        \scriptsize{Le système affiche les options d’aide}
+      \item
+        \scriptsize{Le joueur change le niveau de l’aide (facile, intermédiaire ou difficile) puis appuie sur le bouton de validation}
     \end{enumerate}
-\pause 
- \end{block}
+  \pause 
+  \end{block}
   \begin{block}{\footnotesize{Post-conditions}}
     \scriptsize{Le système a modifié les options.}
-\pause
+  \pause
   \end{block}
   \begin{block}{\footnotesize{Enchaînement d’Exception 1}}
     \scriptsize{On annule la sélection des options. Commence après le point 2 de la séquence nominale.}
     \begin{enumerate}    
       \setbeamertemplate{enumerate item}[circle]
-    \item
-      \scriptsize{L’utilisateur clique sur le bouton annuler}
-    \item
-      \scriptsize{Le système ne modifie pas les options et laisse la configuration précédent.}
+      \item
+        \scriptsize{L’utilisateur clique sur le bouton annuler}
+      \item
+        \scriptsize{Le système ne modifie pas les options et laisse la configuration précédent.}
     \end{enumerate}
   \end{block}
 \end{frame}
@@ -173,31 +174,74 @@ L’enchaînement démarre après n’importe quel point de la séquence nominal
   \frametitle{Fiche détaillée du cas d'utilisation « Consulter les statistiques »}
   \setbeamertemplate{blocks}[default]
   \begin{block}{\footnotesize{But}}
-\scriptsize{Décrire les étapes de consultation des statistiques}
+    \scriptsize{Décrire les étapes de consultation des statistiques}
   \end{block}
   \pause
   \begin{block}{\footnotesize{Séquencement}}
-\scriptsize{Le cas d'utilisation démarre lorsqu’un utilisateur appuie sur le bouton de consultations des statistiques}
+    \scriptsize{Le cas d'utilisation démarre lorsqu’un utilisateur appuie sur le bouton de consultations des statistiques}
   \end{block}
   \pause
   \begin{block}{\footnotesize{Enchaînement nominal}}
     \begin{enumerate}    
       \setbeamertemplate{enumerate item}[circle]
-    \item
-      \scriptsize{Le joueur appuie sur le bouton}
-    \item
-      \scriptsize{Le joueur affiche les statistiques gardées en mémoire}
+      \item
+        \scriptsize{Le joueur appuie sur le bouton}
+      \item
+        \scriptsize{Le joueur affiche les statistiques gardées en mémoire}
     \end{enumerate}
-\pause 
- \end{block}
+  \pause 
+  \end{block}
 \end{frame}
 
+\begin{frame}
+  \frametitle{Fiche détaillée du cas d'utilisation « Publier Résultats »}
+  \setbeamertemplate{blocks}[default]
+  \begin{block}{\footnotesize{But}}
+    \scriptsize{Décrire les étapes permettant au client publier leurs résultats}
+  \end{block}
+  \pause
+  \begin{block}{\footnotesize{Séquencement}}
+    \scriptsize{Le cas d'utilisation commence lorsqu’un jouer appuyé le bouton « Publier Résultats ».}
+  \end{block}
+  \pause
+  \begin{block}{\footnotesize{Pre-condition}}
+    \scriptsize{Le résultat doit être supérieur ou égal a 0.}
+  \end{block}
+  \pause
+  \begin{block}{\footnotesize{Enchaînement nominal}}
+    \begin{enumerate}    
+      \setbeamertemplate{enumerate item}[circle]
+      \item
+        \scriptsize{Le système envoyé aux réseaux sociaux le résultat du jouer.}
+      \item
+        \scriptsize{Le système indique le succès de l'envoi du résultat. }
+    \end{enumerate}
+  \end{block}
+  \pause
+  \begin{block}{\footnotesize{Enchaînement d’Exception 1}}
+    \begin{enumerate}
+      \item
+        \scriptsize{Le Système indique que le réseau est indisponible.}
+      \item
+        \scriptsize{Case se termine.}
+    \end{enumerate}
+  \end{block}
+\end{frame}
 
 \subsection{Diagramme de classe métier}
 \begin{frame}
   \frametitle{Diagramme de classe métier}
   \begin{figure}[h]
     \includegraphics[scale=0.4]{diagrammeDeClasseMetier.png}
-\end{figure}
+  \end{figure}
 \end{frame}
+
+\subsection{Diagramme de Séquence}
+\begin{frame}
+  \frametitle{Diagramme de Séquence}
+  \begin{figure}[h]
+    \includegraphics[scale=0.4]{LEdiagrammedesequence.png}
+  \end{figure}
+\end{frame}
+
 \end{document}
