@@ -141,7 +141,7 @@ L’enchaînement démarre après n’importe quel point de la séquence nominal
   \end{block}
   \pause
   \begin{block}{\footnotesize{Séquencement}}
-    \scriptsize{Le cas d'utilisation démarre lorsqu’un utilisateur appuie sur le bouton de configuration de l’aide}
+    \scriptsize{Le cas d'utilisation démarre lorsque l'utilisateur appuie sur le bouton de configuration de l’aide.}
   \end{block}
   \pause
   \begin{block}{\footnotesize{Enchaînement nominal}}
@@ -150,7 +150,7 @@ L’enchaînement démarre après n’importe quel point de la séquence nominal
       \item
         \scriptsize{Le système affiche les options d’aide}
       \item
-        \scriptsize{Le joueur change le niveau de l’aide (facile, intermédiaire ou difficile) puis appuie sur le bouton de validation}
+        \scriptsize{L'utilisateur change le niveau de l’aide (facile, intermédiaire ou difficile) puis appuie sur le bouton de validation}
     \end{enumerate}
   \pause 
   \end{block}
@@ -159,13 +159,13 @@ L’enchaînement démarre après n’importe quel point de la séquence nominal
   \pause
   \end{block}
   \begin{block}{\footnotesize{Enchaînement d’Exception 1}}
-    \scriptsize{On annule la sélection des options. Commence après le point 2 de la séquence nominale.}
+    \scriptsize{On annule la sélection des options. L'enchaînement commence après le point 1 de la séquence nominale.}
     \begin{enumerate}    
       \setbeamertemplate{enumerate item}[circle]
       \item
         \scriptsize{L’utilisateur clique sur le bouton annuler}
       \item
-        \scriptsize{Le système ne modifie pas les options et laisse la configuration précédent.}
+        \scriptsize{Le système ne modifie pas les options et laisse la configuration précédente.}
     \end{enumerate}
   \end{block}
 \end{frame}
@@ -178,16 +178,14 @@ L’enchaînement démarre après n’importe quel point de la séquence nominal
   \end{block}
   \pause
   \begin{block}{\footnotesize{Séquencement}}
-    \scriptsize{Le cas d'utilisation démarre lorsqu’un utilisateur appuie sur le bouton de consultations des statistiques}
+    \scriptsize{Le cas d'utilisation démarre lorsque l'utilisateur appuie sur le bouton de consultations des statistiques}
   \end{block}
   \pause
   \begin{block}{\footnotesize{Enchaînement nominal}}
     \begin{enumerate}    
       \setbeamertemplate{enumerate item}[circle]
       \item
-        \scriptsize{Le joueur appuie sur le bouton}
-      \item
-        \scriptsize{Le joueur affiche les statistiques gardées en mémoire}
+        \scriptsize{Le système affiche les statistiques gardées en mémoire.}
     \end{enumerate}
   \pause 
   \end{block}
@@ -197,31 +195,32 @@ L’enchaînement démarre après n’importe quel point de la séquence nominal
   \frametitle{Fiche détaillée du cas d'utilisation « Publier Résultats »}
   \setbeamertemplate{blocks}[default]
   \begin{block}{\footnotesize{But}}
-    \scriptsize{Décrire les étapes permettant au client publier leurs résultats}
+    \scriptsize{Décrire les étapes permettant à l'utilisateur de publier ses résultats.}
   \end{block}
   \pause
   \begin{block}{\footnotesize{Séquencement}}
-    \scriptsize{Le cas d'utilisation commence lorsqu’un jouer appuyé le bouton « Publier Résultats ».}
+    \scriptsize{Le cas d'utilisation commence lorsque l'utilisateur appuie sur le bouton « Publier Résultats ».}
   \end{block}
   \pause
   \begin{block}{\footnotesize{Pre-condition}}
-    \scriptsize{Le résultat doit être supérieur ou égal a 0.}
+    \scriptsize{Le résultat doit être supérieur ou égal à 0.}
   \end{block}
   \pause
   \begin{block}{\footnotesize{Enchaînement nominal}}
     \begin{enumerate}    
       \setbeamertemplate{enumerate item}[circle]
       \item
-        \scriptsize{Le système envoyé aux réseaux sociaux le résultat du jouer.}
+        \scriptsize{Le système envoie aux réseaux sociaux les résultats de l'utilisateur.}
       \item
         \scriptsize{Le système indique le succès de l'envoi du résultat. }
     \end{enumerate}
   \end{block}
   \pause
   \begin{block}{\footnotesize{Enchaînement d’Exception 1}}
+  \scriptsize{L'enchaînement commence après le point 1 de la séquence nominale.}
     \begin{enumerate}
       \item
-        \scriptsize{Le Système indique que le réseau est indisponible.}
+        \scriptsize{Le système indique que le réseau est indisponible.}
       \item
         \scriptsize{Case se termine.}
     \end{enumerate}
