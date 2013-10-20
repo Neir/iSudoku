@@ -9,8 +9,8 @@
 \usepackage{array}
 
 \mode<presentation> {
-\usetheme{Madrid}
-\setbeamertemplate{navigation symbols}{}
+  \usetheme{Madrid}
+  \setbeamertemplate{navigation symbols}{}
 }
 
 \title[Analyse de iSudoku]{Analyse de iSudoku}
@@ -187,10 +187,8 @@ L’enchaînement démarre après n’importe quel point de la séquence nominal
       \item
         \scriptsize{Le système affiche les statistiques gardées en mémoire.}
     \end{enumerate}
-  \pause 
   \end{block}
 \end{frame}
-
 \begin{frame}
   \frametitle{Fiche détaillée du cas d'utilisation « Publier Résultats »}
   \setbeamertemplate{blocks}[default]
@@ -209,10 +207,10 @@ L’enchaînement démarre après n’importe quel point de la séquence nominal
   \begin{block}{\footnotesize{Enchaînement nominal}}
     \begin{enumerate}    
       \setbeamertemplate{enumerate item}[circle]
-      \item
-        \scriptsize{Le système envoie aux réseaux sociaux les résultats de l'utilisateur.}
-      \item
-        \scriptsize{Le système indique le succès de l'envoi du résultat. }
+    \item
+      \scriptsize{Le système envoie aux réseaux sociaux les résultats de l'utilisateur.}
+    \item
+      \scriptsize{Le système indique le succès de l'envoi du résultat. }
     \end{enumerate}
   \end{block}
   \pause
@@ -242,5 +240,35 @@ L’enchaînement démarre après n’importe quel point de la séquence nominal
     \includegraphics[scale=0.4]{LEdiagrammedesequence.png}
   \end{figure}
 \end{frame}
+
+\subsection{Tests de validation}
+\begin{frame}
+  \frametitle{Test de validation du cas d'utilisation « Résoudre Grille »}
+  \setbeamertemplate{blocks}[default]
+  \begin{block}{\footnotesize{Titre}}
+    \scriptsize{Résoudre une grille en mode facile}
+  \end{block}
+  \pause
+  \begin{block}{\footnotesize{Contexte}}
+    \scriptsize{Le niveau est mis à facile dans les options}
+  \end{block}
+  \pause
+  \begin{block}{\footnotesize{Scénario}}
+    \begin{enumerate}
+      \setbeamertemplate{enumerate item}[circle]
+      \item
+        \scriptsize{L'utilisateur saisit un numéro dans une case vide parmi ceux proposés pour cette case}
+      \item
+        \scriptsize{L’utilisateur répète cette action jusqu’à compléter la grille}
+      \item
+        \scriptsize{L’utilisateur valide la grille}
+    \end{enumerate}
+  \end{block}
+  \pause
+  \begin{block}{\footnotesize{Résultat attendu}}
+    \scriptsize{Le système affiche les statistiques de la partie}
+  \end{block}
+\end{frame}
+
 
 \end{document}
