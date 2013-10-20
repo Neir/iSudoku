@@ -243,7 +243,7 @@ L’enchaînement démarre après n’importe quel point de la séquence nominal
 
 \subsection{Tests de validation}
 \begin{frame}
-  \frametitle{Test de validation du cas d'utilisation « Résoudre Grille »}
+  \frametitle{Test de validation \no 1 du cas d'utilisation « Résoudre Grille »}
   \setbeamertemplate{blocks}[default]
   \begin{block}{\footnotesize{Titre}}
     \scriptsize{Résoudre une grille en mode facile}
@@ -269,6 +269,29 @@ L’enchaînement démarre après n’importe quel point de la séquence nominal
     \scriptsize{Le système affiche les statistiques de la partie}
   \end{block}
 \end{frame}
-
+\begin{frame}
+  \frametitle{Test de validation \no 2 du cas d'utilisation « Résoudre Grille »}
+  \setbeamertemplate{blocks}[default]
+  \begin{block}{\footnotesize{Titre}}
+    \scriptsize{Faire une faute en résolvant une grille en mode intermédiaire}
+  \end{block}
+  \pause
+  \begin{block}{\footnotesize{Contexte}}
+    \scriptsize{Le niveau est mis à intermédiaire dans les options}
+  \end{block}
+  \pause
+  \begin{block}{\footnotesize{Scénario}}
+    \begin{enumerate}
+      \setbeamertemplate{enumerate item}[circle]
+    \item
+      \scriptsize{L’utilisateur saisit un mauvais numéro dans une case vide (c’est-à-dire un numéro entre 1 et 9 apparaissant déjà dans la colonne et/ou dans la ligne et/ou dans le carré).}
+      \end{enumerate}
+    \end{block}
+    \pause
+    \begin{block}{\footnotesize{Résultat attendu}}
+      \scriptsize{Le système affiche un message signalant que la valeur est fausse.}
+    \end{block}
+  \end{frame}
+  
 
 \end{document}
