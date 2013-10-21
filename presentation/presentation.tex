@@ -246,11 +246,11 @@ L’enchaînement démarre après n’importe quel point de la séquence nominal
   \frametitle{Test de validation \no 1 du cas d'utilisation « Résoudre Grille »}
   \setbeamertemplate{blocks}[default]
   \begin{block}{\footnotesize{Titre}}
-    \scriptsize{Résoudre une grille en mode facile}
+    \scriptsize{Résoudre correctement une grille en mode difficile}
   \end{block}
   \pause
   \begin{block}{\footnotesize{Contexte}}
-    \scriptsize{Le niveau est mis à facile dans les options}
+    \scriptsize{Le niveau est mis à difficile dans les options}
   \end{block}
   \pause
   \begin{block}{\footnotesize{Scénario}}
@@ -262,11 +262,16 @@ L’enchaînement démarre après n’importe quel point de la séquence nominal
         \scriptsize{L’utilisateur répète cette action jusqu’à compléter la grille}
       \item
         \scriptsize{L’utilisateur valide la grille}
+      \item
+        \scriptsize{Le système affiche que la grille est bien remplie} 
     \end{enumerate}
   \end{block}
   \pause
   \begin{block}{\footnotesize{Résultat attendu}}
-    \scriptsize{Le système affiche les statistiques de la partie}
+    \scriptsize{Les statistiques de la partie (temps écoulé et nombres de fautes) sont affichées}
+  \end{block}
+  \begin{block}{\footnotesize{Moyen de vérification}}
+    \scriptsize{Visuelle : les statistiques apparaissent sur l’écran du smartphone / tablette}
   \end{block}
 \end{frame}
 \begin{frame}
