@@ -1,0 +1,72 @@
+Description du cas « Jouer une partie »
+
+- Identification
+Nom du cas : « Jouer une partie »
+But : l'utilisateur veut résoudre une grille vierge de sudoku
+Acteur principal : Joueur
+Acteur secondaire : Aucun
+Date de création :
+Date de mise-à-jour :
+Responsable :
+Version :
+
+- Séquencement
+Le cas d'utilisation commence lorsque le joueur clique sur le bouton "jouer".
+
+Pré-conditions : aucune
+
+Enchaînement nominal :
+
+1) Le système affiche une page proposant au joueur le choix du niveau de difficulté (de l'aide) et s'il veut générer une grille à partir d'une photo.
+2) L'utilisateur choisi un niveau de difficulté.
+3) Le système affiche l'écran de jeu avec la grille générée (aléatoirement ou par photo)
+4) L'utilisateur sélectionne une case vide de la grille à remplir.
+5) Le système affiche une aide selon le niveau de difficulté :
+   - lorsque le niveau est facile, le système affiche pour chaque case les valeurs possibles au vu du
+   reste de la grille
+   - lorsque le niveau est difficile, le système n'affiche rien
+6) L'utilisateur entre un numéro de 1 à 9 dans cette case.
+7) Le système vérifie si la grille est complétée et correcte et affiche "Victoire!" si c'est le cas.
+Il retourne au menu d'acceuil.
+
+Post-conditions :
+Le QI du joueur est mis-à-jour.
+
+Enchaînements alternatifs :
+
+A1 : Le joueur choisi de générer une grille par une photo, commence au 1) de la séquence nominale :
+1) L'utilisateur choisi "générer par photo" plutôt que de choisir une difficulté.
+2) Le système affiche l'activité permettant de prendre une grille en photo.
+3) L'utilisateur cible une grille et clique sur le bouton de prise de photo
+Reprise au 2) afin de choisir le niveau de difficulté de l'aide.
+// Gérer le cas où la grille n'est pas reconnue ect...
+----> cas d'utilisation "générer grille par photo"
+
+
+A2 : Le niveau est intermédiaire et l'utilisateur se trompe lorsqu'il entre une
+valeur dans une case
+L'enchaînement démarre après le point 6) de la séquence nominale :
+1) Le système affiche un message signalant que la valeur entrée est fausse
+2) On retourne au point 5) de la séquence nominale
+
+A3 : Le niveau est difficile et la grille remplie par l'utilisateur est fausse
+L'enchaînement démarre après le point 7) de la séquence nominale :
+1) Le système affiche un message signalant que la grille est fausse et propose au joueur de recommencer
+2) Le joueur accepte.
+3) le système remet la grille à zéro
+4) On retourne au point 3) de la séquence nominale.
+
+A3-2 : Le joueur n'accepte pas la défaite mais abandonne la partie. 
+L'enchaînement démarre après le 1) de la séquence alternative A3 :
+1) Le joueur refuse de recommencer la grille.
+2) Le système affiche "Défaite!"
+3) Le sytème retourne au menu d'acceuil.
+
+A4 : La grille n'est pas fausse mais est encore incompléte.
+Commence au 7) de l'enchaînement nominal :
+Retour au 4) de l'enchaînement nominal.
+
+E1 : On interrompt le remplissage de la grille (ou bien l'utilisateur quitte ou
+bien l'application est interrompue par une application externe comme la
+réception d'un appel)
+L'enchaînement démarre après n'importe quel point de la séquence nominale.
