@@ -1,0 +1,103 @@
+\documentclass{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage[french]{babel}
+\usepackage{array}
+
+\mode<presentation> {
+  \usetheme{Madrid}
+  \setbeamertemplate{navigation symbols}{}
+}
+
+\title[Analyse de iSudoku]{Analyse de iSudoku}
+\subtitle[\ldots]{Projet de l'UE Ingénierie du Logiciel}
+\author{
+  Maude \bsc{Bellamy}
+  \and
+  Antoine \bsc{Houssais}
+  \and
+  Théo \bsc{Lebourg}
+  \and
+  Jérôme \bsc{Rahault}
+  \and
+  Fabricio \bsc{Santolin Da Silva}
+  \and
+  Simon \bsc{Tchernia}
+}
+\institute[UPMC]{Université Pierre et Marie Curie}
+\date{\today}
+
+\AtBeginSection[] {
+  \begin{frame}
+    \frametitle{Sommaire}
+    \tableofcontents[currentsection, hideothersubsections, pausesubsections]
+  \end{frame}
+}
+
+\begin{document}
+
+\maketitle
+
+\section{Phase de conception}
+\subsection {Diagramme de composant et interfaces requises/offertes}
+\begin{frame}
+  \frametitle{Notre diagramme de composant et leurs interfaces requises/offerts}
+  \begin{figure}[h]
+    \includegraphics[scale=0.5]{diagramme_composants.JPG}
+  \end{figure}
+\end{frame}
+
+\subsection{Un diagramme de séquence de niveau interaction inter-composant}
+\begin{frame}
+  \frametitle{Un diagramme de séquence}
+  \begin{figure}[h]
+    \includegraphics[scale=0.275]{dia_seq_02.jpg}
+  \end{figure}
+\end{frame}
+
+\subsection{Instanciation nominale des composants}
+\begin{frame}
+\frametitle{Instanciation nominale des composants}
+  \begin{figure}[h]
+    \includegraphics[scale=0.6]{diagramme_instanciation_nominale.JPG}
+  \end{figure}
+\end{frame}
+
+\subsection{Diagrammes de classe de niveau conception détaillée}
+
+\begin{frame}
+\frametitle{Diagramme de classe de niveau conception détaillée}
+  \setbeamertemplate{blocks}[default]
+  \begin{block}{\footnotesize{CGrille}}
+    \begin{figure}[h]
+      \includegraphics[scale=0.37]{diagramme_classe_detaillee_CGrille.JPG}
+    \end{figure}
+  \end{block}
+  \pause
+  \begin{block}{\footnotesize{CJeu}}
+    \begin{figure}[h]
+      \includegraphics[scale=0.37]{diagramme_classe_detaillee_CJeu.JPG}
+    \end{figure}
+  \end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Diagramme de classe de niveau conception détaillée}
+ \setbeamertemplate{blocks}[default]
+  \begin{block}{\footnotesize{CJoueur}}
+    \begin{figure}[h]
+      \includegraphics[scale=0.37]{diagramme_classe_detaillee_CJoueur.JPG}
+    \end{figure}
+  \end{block}
+\end{frame}
+
+\subsection{Tests d’intégration}
+\begin{frame}
+ 
+\end{frame}
+
+\end{document}
