@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.10.29)  8 DEC 2013 12:29
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.10.29)  8 DEC 2013 14:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1249,7 +1249,7 @@ Overfull \hbox (236.2807pt too wide) has occurred while \output is active
 
 [6
 
-] <diagramme_composants.JPG, id=122, 553.46774pt x 392.667pt>
+] <diagramme_composants.JPG, id=127, 553.46774pt x 392.667pt>
 File: diagramme_composants.JPG Graphic file (type jpg)
 
 <use diagramme_composants.JPG>
@@ -1263,13 +1263,14 @@ Overfull \hbox (236.2807pt too wide) has occurred while \output is active
 [7
 
  <./diagramme_composants.JPG>]
-<dia_seq_02.jpg, id=129, 1093.21098pt x 821.43507pt>
-File: dia_seq_02.jpg Graphic file (type jpg)
- <use dia_seq_02.jpg>
-Package pdftex.def Info: dia_seq_02.jpg used on input line 60.
-(pdftex.def)             Requested size: 300.62561pt x 225.88907pt.
+<diagrammeSequence_01.png, id=134, 978.65625pt x 794.97pt>
+File: diagrammeSequence_01.png Graphic file (type png)
 
-Overfull \vbox (8.81831pt too high) detected at line 60
+<use diagrammeSequence_01.png>
+Package pdftex.def Info: diagrammeSequence_01.png used on input line 60.
+(pdftex.def)             Requested size: 269.12384pt x 218.61136pt.
+
+Overfull \vbox (1.5406pt too high) detected at line 60
  []
 
 
@@ -1279,14 +1280,13 @@ Overfull \hbox (236.2807pt too wide) has occurred while \output is active
 
 [8
 
- <./dia_seq_02.jpg>]
-<diagramme_instanciation_nominale.JPG, id=135, 334.24875pt x 164.41425pt>
-File: diagramme_instanciation_nominale.JPG Graphic file (type jpg)
+ <./diagrammeSequence_01.png>]
+<diagrammeSequence_02.png, id=142, 570.13pt x 421.575pt>
+File: diagrammeSequence_02.png Graphic file (type png)
 
-<use diagramme_instanciation_nominale.JPG>
-Package pdftex.def Info: diagramme_instanciation_nominale.JPG used on input lin
-e 68.
-(pdftex.def)             Requested size: 200.55078pt x 98.64929pt.
+<use diagrammeSequence_02.png>
+Package pdftex.def Info: diagrammeSequence_02.png used on input line 67.
+(pdftex.def)             Requested size: 156.78188pt x 115.93025pt.
 
 Overfull \hbox (236.2807pt too wide) has occurred while \output is active
  [][]  \T1/lmss/m/n/6 ([])  
@@ -1294,26 +1294,13 @@ Overfull \hbox (236.2807pt too wide) has occurred while \output is active
 
 [9
 
- <./diagramme_instanciation_nominale.JPG>]
-<diagramme_classe_detaillee_CGrille.JPG, id=141, 543.83176pt x 141.52875pt>
-File: diagramme_classe_detaillee_CGrille.JPG Graphic file (type jpg)
+ <./diagrammeSequence_02.png>]
+<diagrammeSequence_03.png, id=150, 1082.0425pt x 465.74pt>
+File: diagrammeSequence_03.png Graphic file (type png)
 
-<use diagramme_classe_detaillee_CGrille.JPG>
-Package pdftex.def Info: diagramme_classe_detaillee_CGrille.JPG used on input l
-ine 86.
-(pdftex.def)             Requested size: 201.2146pt x 52.3648pt.
-
-<diagramme_classe_detaillee_CJeu.JPG, id=142, 548.0475pt x 234.27525pt>
-File: diagramme_classe_detaillee_CJeu.JPG Graphic file (type jpg)
-
-<use diagramme_classe_detaillee_CJeu.JPG>
-Package pdftex.def Info: diagramme_classe_detaillee_CJeu.JPG used on input line
- 86.
-(pdftex.def)             Requested size: 202.7744pt x 86.68048pt.
-
-Overfull \vbox (4.47462pt too high) detected at line 86
- []
-
+<use diagrammeSequence_03.png>
+Package pdftex.def Info: diagrammeSequence_03.png used on input line 74.
+(pdftex.def)             Requested size: 297.55435pt x 128.07533pt.
 
 Overfull \hbox (236.2807pt too wide) has occurred while \output is active
  [][]  \T1/lmss/m/n/6 ([])  
@@ -1321,23 +1308,14 @@ Overfull \hbox (236.2807pt too wide) has occurred while \output is active
 
 [10
 
- <./diagramme_classe_detaillee_CGrille.JPG> <./diagramme_classe_detaillee_CJeu.
-JPG>]
-File: diagramme_classe_detaillee_CGrille.JPG Graphic file (type jpg)
- <use diagramme_classe_detaillee_CGrille.JPG>
-Package pdftex.def Info: diagramme_classe_detaillee_CGrille.JPG used on input l
-ine 86.
-(pdftex.def)             Requested size: 201.2146pt x 52.3648pt.
-File: diagramme_classe_detaillee_CJeu.JPG Graphic file (type jpg)
+ <./diagrammeSequence_03.png>]
+<diagramme_instanciation_nominale.JPG, id=156, 334.24875pt x 164.41425pt>
+File: diagramme_instanciation_nominale.JPG Graphic file (type jpg)
 
-<use diagramme_classe_detaillee_CJeu.JPG>
-Package pdftex.def Info: diagramme_classe_detaillee_CJeu.JPG used on input line
- 86.
-(pdftex.def)             Requested size: 202.7744pt x 86.68048pt.
-
-Overfull \vbox (4.47462pt too high) detected at line 86
- []
-
+<use diagramme_instanciation_nominale.JPG>
+Package pdftex.def Info: diagramme_instanciation_nominale.JPG used on input lin
+e 83.
+(pdftex.def)             Requested size: 200.55078pt x 98.64929pt.
 
 Overfull \hbox (236.2807pt too wide) has occurred while \output is active
  [][]  \T1/lmss/m/n/6 ([])  
@@ -1345,13 +1323,26 @@ Overfull \hbox (236.2807pt too wide) has occurred while \output is active
 
 [11
 
-] <diagramme_classe_detaillee_CJoueur.JPG, id=156, 265.59225pt x 269.808pt>
-File: diagramme_classe_detaillee_CJoueur.JPG Graphic file (type jpg)
+ <./diagramme_instanciation_nominale.JPG>]
+<diagramme_classe_detaillee_CGrille.JPG, id=163, 543.83176pt x 141.52875pt>
+File: diagramme_classe_detaillee_CGrille.JPG Graphic file (type jpg)
 
-<use diagramme_classe_detaillee_CJoueur.JPG>
-Package pdftex.def Info: diagramme_classe_detaillee_CJoueur.JPG used on input l
-ine 96.
-(pdftex.def)             Requested size: 98.26758pt x 99.8274pt.
+<use diagramme_classe_detaillee_CGrille.JPG>
+Package pdftex.def Info: diagramme_classe_detaillee_CGrille.JPG used on input l
+ine 101.
+(pdftex.def)             Requested size: 201.2146pt x 52.3648pt.
+
+<diagramme_classe_detaillee_CJeu.JPG, id=164, 548.0475pt x 234.27525pt>
+File: diagramme_classe_detaillee_CJeu.JPG Graphic file (type jpg)
+
+<use diagramme_classe_detaillee_CJeu.JPG>
+Package pdftex.def Info: diagramme_classe_detaillee_CJeu.JPG used on input line
+ 101.
+(pdftex.def)             Requested size: 202.7744pt x 86.68048pt.
+
+Overfull \vbox (4.47462pt too high) detected at line 101
+ []
+
 
 Overfull \hbox (236.2807pt too wide) has occurred while \output is active
  [][]  \T1/lmss/m/n/6 ([])  
@@ -1359,12 +1350,50 @@ Overfull \hbox (236.2807pt too wide) has occurred while \output is active
 
 [12
 
- <./diagramme_classe_detaillee_CJoueur.JPG>]
+ <./diagramme_classe_detaillee_CGrille.JPG> <./diagramme_classe_detaillee_CJeu.
+JPG>]
+File: diagramme_classe_detaillee_CGrille.JPG Graphic file (type jpg)
+ <use diagramme_classe_detaillee_CGrille.JPG>
+Package pdftex.def Info: diagramme_classe_detaillee_CGrille.JPG used on input l
+ine 101.
+(pdftex.def)             Requested size: 201.2146pt x 52.3648pt.
+File: diagramme_classe_detaillee_CJeu.JPG Graphic file (type jpg)
+
+<use diagramme_classe_detaillee_CJeu.JPG>
+Package pdftex.def Info: diagramme_classe_detaillee_CJeu.JPG used on input line
+ 101.
+(pdftex.def)             Requested size: 202.7744pt x 86.68048pt.
+
+Overfull \vbox (4.47462pt too high) detected at line 101
+ []
+
+
 Overfull \hbox (236.2807pt too wide) has occurred while \output is active
  [][]  \T1/lmss/m/n/6 ([])  
  []
 
 [13
+
+] <diagramme_classe_detaillee_CJoueur.JPG, id=180, 265.59225pt x 269.808pt>
+File: diagramme_classe_detaillee_CJoueur.JPG Graphic file (type jpg)
+
+<use diagramme_classe_detaillee_CJoueur.JPG>
+Package pdftex.def Info: diagramme_classe_detaillee_CJoueur.JPG used on input l
+ine 111.
+(pdftex.def)             Requested size: 98.26758pt x 99.8274pt.
+
+Overfull \hbox (236.2807pt too wide) has occurred while \output is active
+ [][]  \T1/lmss/m/n/6 ([])  
+ []
+
+[14
+
+ <./diagramme_classe_detaillee_CJoueur.JPG>]
+Overfull \hbox (236.2807pt too wide) has occurred while \output is active
+ [][]  \T1/lmss/m/n/6 ([])  
+ []
+
+[15
 
 ]
 \tf@nav=\write6
@@ -1376,11 +1405,11 @@ Overfull \hbox (236.2807pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 103.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 103.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 118.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 118.
  (./presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 103.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 103.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 118.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 118.
 
 
 Package rerunfilecheck Warning: File `presentation.out' has changed.
@@ -1388,32 +1417,35 @@ Package rerunfilecheck Warning: File `presentation.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `presentation.out':
-(rerunfilecheck)             Before: 858323A8D97C0AC33DE83082F2F8AA3E;539
-(rerunfilecheck)             After:  0B52A6A7C0269BFC3583134CE4772707;539.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 103.
+(rerunfilecheck)             Before: A089DC95CCF7FC0C78F3BEC41115BF3B;547
+(rerunfilecheck)             After:  974704678DB983A67D379CA85F544C9F;547.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 118.
  ) 
 Here is how much of TeX's memory you used:
- 16694 strings out of 495030
- 304646 string characters out of 3180760
+ 16711 strings out of 495030
+ 305048 string characters out of 3180760
  381373 words of memory out of 3000000
- 19429 multiletter control sequences out of 15000+200000
+ 19439 multiletter control sequences out of 15000+200000
  30036 words of font info for 26 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  49i,16n,66p,401b,686s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{Navigation14} has been referenced but does not ex
-ist, replaced by a fixed one
+pdfTeX warning (dest): name{Outline0.1.5.14} has been referenced but does not
+ exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{Outline0.1.5.14} has been referenced but does not e
+pdfTeX warning (dest): name{Outline0.1.4.11} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Outline0.1.3.10} has been referenced but does not e
 xist, replaced by a fixed one
 
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/pu
 blic/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/sh
 are/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public
 /lm/lmss8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss9.pfb>
-Output written on presentation.pdf (13 pages, 811738 bytes).
+Output written on presentation.pdf (15 pages, 564684 bytes).
 PDF statistics:
- 199 PDF objects out of 1000 (max. 8388607)
- 161 compressed objects within 2 object streams
- 35 named destinations out of 1000 (max. 500000)
- 141 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 224 PDF objects out of 1000 (max. 8388607)
+ 181 compressed objects within 2 object streams
+ 40 named destinations out of 1000 (max. 500000)
+ 151 words of extra memory for PDF output out of 10000 (max. 10000000)
 
