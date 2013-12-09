@@ -112,7 +112,58 @@
 
 \subsection{Tests d’intégration}
 \begin{frame}
- 
+  \frametitle{Test d’intégration \no 1 du cas d'utilisation « Jouer une valeur en difficulté facile »}
+  \setbeamertemplate{blocks}[default]
+  \begin{block}{\footnotesize{Titre}}
+    \scriptsize{Terminer une partie en jouant une valeur correcte en niveau facile}
+  \end{block}
+  \pause
+  \begin{block}{\footnotesize{Contexte}}
+    \scriptsize{Une partie a été lancée en niveau « facile » (cf. Test \no x) et il reste une case à complèter}
+  \end{block}
+  \begin{block}{\footnotesize{Scénario}}
+    \begin{enumerate}
+      \setbeamertemplate{enumerate item}[circle]
+      \item
+        \scriptsize{L’utilisateur clique sur la case à remplir et entre la valeur correcte}
+      \item
+        \scriptsize{Le système valide la grille et affiche les statistiques de la partie}
+    \end{enumerate}
+  \end{block}
+  \pause
+  \begin{block}{\footnotesize{Résultat attendu}}
+    \scriptsize{Le partie est terminée.}
+  \end{block}
+  \begin{block}{\footnotesize{Moyen de vérification}}
+    \scriptsize{Visuelle : un message annonçant que la grille a été correctement complétée est affiché}
+  \end{block}
 \end{frame}
-
+\begin{frame}
+  \frametitle{Test d’intégration \no 2 du cas d'utilisation « Générer une grille via une photo »}
+  \setbeamertemplate{blocks}[default]
+  \begin{block}{\footnotesize{Titre}}
+    \scriptsize{Générer une grille de iSudoku en prenant une photo}
+  \end{block}
+  \pause
+  \begin{block}{\footnotesize{Scénario}}
+    \begin{enumerate}
+      \setbeamertemplate{enumerate item}[circle]
+      \item
+        \scriptsize{L’utilisateur clique sur le bouton « prendre une photo »}
+      \item
+        \scriptsize{L’utilisateur prend une photo d’une grille de Sudoku}
+      \item
+        \scriptsize{Le système affiche que la grille a bien été générée}
+      \item
+        \scriptsize{Le système affiche la grille} 
+    \end{enumerate}
+  \end{block}
+  \pause
+  \begin{block}{\footnotesize{Résultat attendu}}
+    \scriptsize{La grille « numérisée » est identique à celle prise en photo.}
+  \end{block}
+  \begin{block}{\footnotesize{Moyen de vérification}}
+    \scriptsize{Visuelle : la grille apparait sur l’application et est prête à être remplie}
+  \end{block}
+\end{frame}
 \end{document}

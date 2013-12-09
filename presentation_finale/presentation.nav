@@ -25,10 +25,12 @@
 \headcommand {\slideentry {1}{4}{2}{14/14}{Diagrammes de classe de niveau conception d\IeC {\'e}taill\IeC {\'e}e}{0}}
 \headcommand {\beamer@framepages {14}{14}}
 \headcommand {\beamer@subsectionentry {0}{1}{5}{15}{Tests d\IeC {\textquoteright }int\IeC {\'e}gration}}\headcommand {\beamer@subsectionpages {12}{14}}
-\headcommand {\slideentry {1}{5}{1}{15/15}{Tests d\IeC {\textquoteright }int\IeC {\'e}gration}{0}}
-\headcommand {\beamer@framepages {15}{15}}
-\headcommand {\beamer@partpages {1}{15}}
-\headcommand {\beamer@subsectionpages {15}{15}}
-\headcommand {\beamer@sectionpages {2}{15}}
-\headcommand {\beamer@documentpages {15}}
-\headcommand {\def \inserttotalframenumber {10}}
+\headcommand {\slideentry {1}{5}{1}{15/17}{Tests d\IeC {\textquoteright }int\IeC {\'e}gration}{0}}
+\headcommand {\beamer@framepages {15}{17}}
+\headcommand {\slideentry {1}{5}{2}{18/20}{Tests d\IeC {\textquoteright }int\IeC {\'e}gration}{0}}
+\headcommand {\beamer@framepages {18}{20}}
+\headcommand {\beamer@partpages {1}{20}}
+\headcommand {\beamer@subsectionpages {15}{20}}
+\headcommand {\beamer@sectionpages {2}{20}}
+\headcommand {\beamer@documentpages {20}}
+\headcommand {\def \inserttotalframenumber {11}}
