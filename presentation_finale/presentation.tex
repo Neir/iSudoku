@@ -69,7 +69,7 @@
 \begin{frame}
   \frametitle{Diagramme de séquence « Générer une grille par photo »}
   \begin{figure}[h]
-    \includegraphics[scale=0.275]{diagrammeSequence_03.png}
+    \includegraphics[scale=0.3]{diagrammeSequence_03.png}
   \end{figure}
 \end{frame}
 
@@ -125,7 +125,11 @@
     \begin{enumerate}
       \setbeamertemplate{enumerate item}[circle]
       \item
-        \scriptsize{L’utilisateur clique sur la case à remplir et entre la valeur correcte}
+        \scriptsize{L’utilisateur clique sur la case à remplir}
+      \item
+        \scriptsize{Le système affiche la valeur possible}
+      \item
+        \scriptsize{L’utilisateur entre la valeur correcte}
       \item
         \scriptsize{Le système valide la grille et affiche les statistiques de la partie}
     \end{enumerate}
@@ -165,5 +169,14 @@
   \begin{block}{\footnotesize{Moyen de vérification}}
     \scriptsize{Visuelle : la grille apparait sur l’application et est prête à être remplie}
   \end{block}
+\end{frame}
+
+\section{Génération de code}
+
+\begin{frame}
+\frametitle{Diagramme de classe}
+  \begin{figure}[h]
+      \includegraphics[scale=0.4]{DiagrammeClasseGenere.png}
+    \end{figure}
 \end{frame}
 \end{document}
